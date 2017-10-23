@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		187FEF541F9E038500247E38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF531F9E038500247E38 /* AppDelegate.swift */; };
+		187FEF561F9E038500247E38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF551F9E038500247E38 /* ViewController.swift */; };
+		187FEF591F9E038500247E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187FEF571F9E038500247E38 /* Main.storyboard */; };
+		187FEF5C1F9E038500247E38 /* Dental_Account_Book.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF5A1F9E038500247E38 /* Dental_Account_Book.xcdatamodeld */; };
+		187FEF5E1F9E038500247E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187FEF5D1F9E038500247E38 /* Assets.xcassets */; };
+		187FEF611F9E038500247E38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187FEF5F1F9E038500247E38 /* LaunchScreen.storyboard */; };
+		187FEF6C1F9E038500247E38 /* Dental_Account_BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF6B1F9E038500247E38 /* Dental_Account_BookTests.swift */; };
+		187FEF771F9E038500247E38 /* Dental_Account_BookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF761F9E038500247E38 /* Dental_Account_BookUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		187FEF681F9E038500247E38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187FEF481F9E038500247E38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187FEF4F1F9E038500247E38;
+			remoteInfo = "Dental Account Book";
+		};
+		187FEF731F9E038500247E38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187FEF481F9E038500247E38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187FEF4F1F9E038500247E38;
+			remoteInfo = "Dental Account Book";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		187FEF501F9E038500247E38 /* Dental Account Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dental Account Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		187FEF531F9E038500247E38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		187FEF551F9E038500247E38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		187FEF581F9E038500247E38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		187FEF5B1F9E038500247E38 /* Dental_Account_Book.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dental_Account_Book.xcdatamodel; sourceTree = "<group>"; };
+		187FEF5D1F9E038500247E38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		187FEF601F9E038500247E38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		187FEF621F9E038500247E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187FEF671F9E038500247E38 /* Dental Account BookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dental Account BookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		187FEF6B1F9E038500247E38 /* Dental_Account_BookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dental_Account_BookTests.swift; sourceTree = "<group>"; };
+		187FEF6D1F9E038500247E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187FEF721F9E038500247E38 /* Dental Account BookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dental Account BookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		187FEF761F9E038500247E38 /* Dental_Account_BookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dental_Account_BookUITests.swift; sourceTree = "<group>"; };
+		187FEF781F9E038500247E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		187FEF4D1F9E038500247E38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187FEF641F9E038500247E38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187FEF6F1F9E038500247E38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		187FEF471F9E038500247E38 = {
+			isa = PBXGroup;
+			children = (
+				187FEF521F9E038500247E38 /* Dental Account Book */,
+				187FEF6A1F9E038500247E38 /* Dental Account BookTests */,
+				187FEF751F9E038500247E38 /* Dental Account BookUITests */,
+				187FEF511F9E038500247E38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		187FEF511F9E038500247E38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				187FEF501F9E038500247E38 /* Dental Account Book.app */,
+				187FEF671F9E038500247E38 /* Dental Account BookTests.xctest */,
+				187FEF721F9E038500247E38 /* Dental Account BookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		187FEF521F9E038500247E38 /* Dental Account Book */ = {
+			isa = PBXGroup;
+			children = (
+				187FEF531F9E038500247E38 /* AppDelegate.swift */,
+				187FEF551F9E038500247E38 /* ViewController.swift */,
+				187FEF571F9E038500247E38 /* Main.storyboard */,
+				187FEF5D1F9E038500247E38 /* Assets.xcassets */,
+				187FEF5F1F9E038500247E38 /* LaunchScreen.storyboard */,
+				187FEF621F9E038500247E38 /* Info.plist */,
+				187FEF5A1F9E038500247E38 /* Dental_Account_Book.xcdatamodeld */,
+			);
+			path = "Dental Account Book";
+			sourceTree = "<group>";
+		};
+		187FEF6A1F9E038500247E38 /* Dental Account BookTests */ = {
+			isa = PBXGroup;
+			children = (
+				187FEF6B1F9E038500247E38 /* Dental_Account_BookTests.swift */,
+				187FEF6D1F9E038500247E38 /* Info.plist */,
+			);
+			path = "Dental Account BookTests";
+			sourceTree = "<group>";
+		};
+		187FEF751F9E038500247E38 /* Dental Account BookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				187FEF761F9E038500247E38 /* Dental_Account_BookUITests.swift */,
+				187FEF781F9E038500247E38 /* Info.plist */,
+			);
+			path = "Dental Account BookUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		187FEF4F1F9E038500247E38 /* Dental Account Book */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187FEF7B1F9E038500247E38 /* Build configuration list for PBXNativeTarget "Dental Account Book" */;
+			buildPhases = (
+				187FEF4C1F9E038500247E38 /* Sources */,
+				187FEF4D1F9E038500247E38 /* Frameworks */,
+				187FEF4E1F9E038500247E38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dental Account Book";
+			productName = "Dental Account Book";
+			productReference = 187FEF501F9E038500247E38 /* Dental Account Book.app */;
+			productType = "com.apple.product-type.application";
+		};
+		187FEF661F9E038500247E38 /* Dental Account BookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187FEF7E1F9E038500247E38 /* Build configuration list for PBXNativeTarget "Dental Account BookTests" */;
+			buildPhases = (
+				187FEF631F9E038500247E38 /* Sources */,
+				187FEF641F9E038500247E38 /* Frameworks */,
+				187FEF651F9E038500247E38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				187FEF691F9E038500247E38 /* PBXTargetDependency */,
+			);
+			name = "Dental Account BookTests";
+			productName = "Dental Account BookTests";
+			productReference = 187FEF671F9E038500247E38 /* Dental Account BookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		187FEF711F9E038500247E38 /* Dental Account BookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187FEF811F9E038500247E38 /* Build configuration list for PBXNativeTarget "Dental Account BookUITests" */;
+			buildPhases = (
+				187FEF6E1F9E038500247E38 /* Sources */,
+				187FEF6F1F9E038500247E38 /* Frameworks */,
+				187FEF701F9E038500247E38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				187FEF741F9E038500247E38 /* PBXTargetDependency */,
+			);
+			name = "Dental Account BookUITests";
+			productName = "Dental Account BookUITests";
+			productReference = 187FEF721F9E038500247E38 /* Dental Account BookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		187FEF481F9E038500247E38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					187FEF4F1F9E038500247E38 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					187FEF661F9E038500247E38 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 187FEF4F1F9E038500247E38;
+					};
+					187FEF711F9E038500247E38 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 187FEF4F1F9E038500247E38;
+					};
+				};
+			};
+			buildConfigurationList = 187FEF4B1F9E038500247E38 /* Build configuration list for PBXProject "Dental Account Book" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 187FEF471F9E038500247E38;
+			productRefGroup = 187FEF511F9E038500247E38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				187FEF4F1F9E038500247E38 /* Dental Account Book */,
+				187FEF661F9E038500247E38 /* Dental Account BookTests */,
+				187FEF711F9E038500247E38 /* Dental Account BookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		187FEF4E1F9E038500247E38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187FEF611F9E038500247E38 /* LaunchScreen.storyboard in Resources */,
+				187FEF5E1F9E038500247E38 /* Assets.xcassets in Resources */,
+				187FEF591F9E038500247E38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187FEF651F9E038500247E38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187FEF701F9E038500247E38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		187FEF4C1F9E038500247E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187FEF5C1F9E038500247E38 /* Dental_Account_Book.xcdatamodeld in Sources */,
+				187FEF561F9E038500247E38 /* ViewController.swift in Sources */,
+				187FEF541F9E038500247E38 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187FEF631F9E038500247E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187FEF6C1F9E038500247E38 /* Dental_Account_BookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187FEF6E1F9E038500247E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187FEF771F9E038500247E38 /* Dental_Account_BookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		187FEF691F9E038500247E38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187FEF4F1F9E038500247E38 /* Dental Account Book */;
+			targetProxy = 187FEF681F9E038500247E38 /* PBXContainerItemProxy */;
+		};
+		187FEF741F9E038500247E38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187FEF4F1F9E038500247E38 /* Dental Account Book */;
+			targetProxy = 187FEF731F9E038500247E38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		187FEF571F9E038500247E38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187FEF581F9E038500247E38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		187FEF5F1F9E038500247E38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187FEF601F9E038500247E38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		187FEF791F9E038500247E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		187FEF7A1F9E038500247E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		187FEF7C1F9E038500247E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7MUL8GL5C;
+				INFOPLIST_FILE = "Dental Account Book/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ravi.Dental-Account-Book";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		187FEF7D1F9E038500247E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7MUL8GL5C;
+				INFOPLIST_FILE = "Dental Account Book/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ravi.Dental-Account-Book";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		187FEF7F1F9E038500247E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7MUL8GL5C;
+				INFOPLIST_FILE = "Dental Account BookTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ravi.Dental-Account-BookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dental Account Book.app/Dental Account Book";
+			};
+			name = Debug;
+		};
+		187FEF801F9E038500247E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7MUL8GL5C;
+				INFOPLIST_FILE = "Dental Account BookTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ravi.Dental-Account-BookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dental Account Book.app/Dental Account Book";
+			};
+			name = Release;
+		};
+		187FEF821F9E038500247E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7MUL8GL5C;
+				INFOPLIST_FILE = "Dental Account BookUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ravi.Dental-Account-BookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dental Account Book";
+			};
+			name = Debug;
+		};
+		187FEF831F9E038500247E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7MUL8GL5C;
+				INFOPLIST_FILE = "Dental Account BookUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ravi.Dental-Account-BookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dental Account Book";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		187FEF4B1F9E038500247E38 /* Build configuration list for PBXProject "Dental Account Book" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187FEF791F9E038500247E38 /* Debug */,
+				187FEF7A1F9E038500247E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187FEF7B1F9E038500247E38 /* Build configuration list for PBXNativeTarget "Dental Account Book" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187FEF7C1F9E038500247E38 /* Debug */,
+				187FEF7D1F9E038500247E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187FEF7E1F9E038500247E38 /* Build configuration list for PBXNativeTarget "Dental Account BookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187FEF7F1F9E038500247E38 /* Debug */,
+				187FEF801F9E038500247E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187FEF811F9E038500247E38 /* Build configuration list for PBXNativeTarget "Dental Account BookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187FEF821F9E038500247E38 /* Debug */,
+				187FEF831F9E038500247E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		187FEF5A1F9E038500247E38 /* Dental_Account_Book.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				187FEF5B1F9E038500247E38 /* Dental_Account_Book.xcdatamodel */,
+			);
+			currentVersion = 187FEF5B1F9E038500247E38 /* Dental_Account_Book.xcdatamodel */;
+			path = Dental_Account_Book.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 187FEF481F9E038500247E38 /* Project object */;
+}

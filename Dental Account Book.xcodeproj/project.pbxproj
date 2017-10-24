@@ -15,6 +15,7 @@
 		187FEF611F9E038500247E38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187FEF5F1F9E038500247E38 /* LaunchScreen.storyboard */; };
 		187FEF6C1F9E038500247E38 /* Dental_Account_BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF6B1F9E038500247E38 /* Dental_Account_BookTests.swift */; };
 		187FEF771F9E038500247E38 /* Dental_Account_BookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF761F9E038500247E38 /* Dental_Account_BookUITests.swift */; };
+		187FEF871F9F57EE00247E38 /* PatientEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF861F9F57EE00247E38 /* PatientEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		187FEF721F9E038500247E38 /* Dental Account BookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dental Account BookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187FEF761F9E038500247E38 /* Dental_Account_BookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dental_Account_BookUITests.swift; sourceTree = "<group>"; };
 		187FEF781F9E038500247E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187FEF861F9F57EE00247E38 /* PatientEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				187FEF531F9E038500247E38 /* AppDelegate.swift */,
 				187FEF551F9E038500247E38 /* ViewController.swift */,
 				187FEF571F9E038500247E38 /* Main.storyboard */,
+				187FEF861F9F57EE00247E38 /* PatientEntryViewController.swift */,
 				187FEF5D1F9E038500247E38 /* Assets.xcassets */,
 				187FEF5F1F9E038500247E38 /* LaunchScreen.storyboard */,
 				187FEF621F9E038500247E38 /* Info.plist */,
@@ -264,6 +267,7 @@
 			files = (
 				187FEF5C1F9E038500247E38 /* Dental_Account_Book.xcdatamodeld in Sources */,
 				187FEF561F9E038500247E38 /* ViewController.swift in Sources */,
+				187FEF871F9F57EE00247E38 /* PatientEntryViewController.swift in Sources */,
 				187FEF541F9E038500247E38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

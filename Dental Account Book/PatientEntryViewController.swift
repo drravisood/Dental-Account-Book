@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class PatientEntryViewController: UIViewController {
     @IBOutlet weak var patientNameText: UITextField!
@@ -19,9 +20,12 @@ class PatientEntryViewController: UIViewController {
     
     let datePicker = UIDatePicker()
     let dateFormatter = DateFormatter()
+    var patientArr = [Patients]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //storing core data
         
         createDatePicker()
         
@@ -86,11 +90,42 @@ class PatientEntryViewController: UIViewController {
         datePickerText.text = dateFormatter.string(from: datePicker.date)
         self.view.endEditing(true)
     }
+///////////////////////////////////////////////////////////////////////////////
+    
+    // MARK: - Core DATA
+
+    
 
   
 
     @IBAction func addPatientName(_ sender: UIButton) {
+        let patient = Patients(context: PersistenceService.context)
+      
+      
+        datePickerText.text = String(describing: patient.datePicker)
+        patientNameText.text = patient.patientName
+        opdNumberText.text = String(patient.opdNumber)
+        totalInvoiceText.text = String(patient.totalInvoice)
+        amountPaidText.text = String(patient.amountPaid)
+        datePaidText.text = String(describing: patient.datePaid)
+        balanceDueText.text = String(patient.balanceDue)
+        PersistenceService.saveContext()
+        patientArr.append(patient)
+       
+        
+        
+        
+        
+        
+//        print("\(String(describing: patientNameText.text))")
+//        print(datePickerText.text!)
+//        print(opdNumberText.text!)
+//        print(totalInvoiceText.text!)
+//        print(amountPaidText.text!)
+//        print(datePaidText.text!)
+//        print(balanceDueText.text!)
     }
+    
     
 
     

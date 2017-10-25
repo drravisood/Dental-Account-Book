@@ -16,6 +16,9 @@
 		187FEF6C1F9E038500247E38 /* Dental_Account_BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF6B1F9E038500247E38 /* Dental_Account_BookTests.swift */; };
 		187FEF771F9E038500247E38 /* Dental_Account_BookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF761F9E038500247E38 /* Dental_Account_BookUITests.swift */; };
 		187FEF871F9F57EE00247E38 /* PatientEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF861F9F57EE00247E38 /* PatientEntryViewController.swift */; };
+		187FEF891FA0AA8A00247E38 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF881FA0AA8A00247E38 /* PersistenceService.swift */; };
+		187FEF8C1FA0B74400247E38 /* Patients+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF8A1FA0B74400247E38 /* Patients+CoreDataClass.swift */; };
+		187FEF8D1FA0B74400247E38 /* Patients+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF8B1FA0B74400247E38 /* Patients+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		187FEF761F9E038500247E38 /* Dental_Account_BookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dental_Account_BookUITests.swift; sourceTree = "<group>"; };
 		187FEF781F9E038500247E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187FEF861F9F57EE00247E38 /* PatientEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientEntryViewController.swift; sourceTree = "<group>"; };
+		187FEF881FA0AA8A00247E38 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		187FEF8A1FA0B74400247E38 /* Patients+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Patients+CoreDataClass.swift"; sourceTree = "<group>"; };
+		187FEF8B1FA0B74400247E38 /* Patients+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Patients+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,10 @@
 		187FEF521F9E038500247E38 /* Dental Account Book */ = {
 			isa = PBXGroup;
 			children = (
+				187FEF8A1FA0B74400247E38 /* Patients+CoreDataClass.swift */,
+				187FEF8B1FA0B74400247E38 /* Patients+CoreDataProperties.swift */,
 				187FEF531F9E038500247E38 /* AppDelegate.swift */,
+				187FEF881FA0AA8A00247E38 /* PersistenceService.swift */,
 				187FEF551F9E038500247E38 /* ViewController.swift */,
 				187FEF571F9E038500247E38 /* Main.storyboard */,
 				187FEF861F9F57EE00247E38 /* PatientEntryViewController.swift */,
@@ -265,10 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187FEF891FA0AA8A00247E38 /* PersistenceService.swift in Sources */,
 				187FEF5C1F9E038500247E38 /* Dental_Account_Book.xcdatamodeld in Sources */,
 				187FEF561F9E038500247E38 /* ViewController.swift in Sources */,
+				187FEF8C1FA0B74400247E38 /* Patients+CoreDataClass.swift in Sources */,
 				187FEF871F9F57EE00247E38 /* PatientEntryViewController.swift in Sources */,
 				187FEF541F9E038500247E38 /* AppDelegate.swift in Sources */,
+				187FEF8D1FA0B74400247E38 /* Patients+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

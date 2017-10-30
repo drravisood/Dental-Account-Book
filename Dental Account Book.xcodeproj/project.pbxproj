@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1833E8D31FA284250012A920 /* ExpensePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833E8D21FA284250012A920 /* ExpensePopupViewController.swift */; };
 		187FEF541F9E038500247E38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF531F9E038500247E38 /* AppDelegate.swift */; };
 		187FEF561F9E038500247E38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF551F9E038500247E38 /* ViewController.swift */; };
 		187FEF591F9E038500247E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187FEF571F9E038500247E38 /* Main.storyboard */; };
@@ -19,6 +20,13 @@
 		187FEF891FA0AA8A00247E38 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF881FA0AA8A00247E38 /* PersistenceService.swift */; };
 		187FEF8C1FA0B74400247E38 /* Patients+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF8A1FA0B74400247E38 /* Patients+CoreDataClass.swift */; };
 		187FEF8D1FA0B74400247E38 /* Patients+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF8B1FA0B74400247E38 /* Patients+CoreDataProperties.swift */; };
+		18DB87C41FA33E3400D38BC9 /* ClinicExpense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87C21FA33E3400D38BC9 /* ClinicExpense+CoreDataClass.swift */; };
+		18DB87C51FA33E3400D38BC9 /* ClinicExpense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87C31FA33E3400D38BC9 /* ClinicExpense+CoreDataProperties.swift */; };
+		18DB87C71FA3645900D38BC9 /* InventoryExpensePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87C61FA3645900D38BC9 /* InventoryExpensePopupViewController.swift */; };
+		18DB87CA1FA477CF00D38BC9 /* InventoryExpense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87C81FA477CF00D38BC9 /* InventoryExpense+CoreDataClass.swift */; };
+		18DB87CB1FA477CF00D38BC9 /* InventoryExpense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87C91FA477CF00D38BC9 /* InventoryExpense+CoreDataProperties.swift */; };
+		18DB87CD1FA49E1900D38BC9 /* PatientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87CC1FA49E1900D38BC9 /* PatientsTableViewController.swift */; };
+		18DB87D11FA4A69A00D38BC9 /* SinglePatientEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87D01FA4A69A00D38BC9 /* SinglePatientEntryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1833E8D21FA284250012A920 /* ExpensePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensePopupViewController.swift; sourceTree = "<group>"; };
 		187FEF501F9E038500247E38 /* Dental Account Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dental Account Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187FEF531F9E038500247E38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187FEF551F9E038500247E38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +66,13 @@
 		187FEF881FA0AA8A00247E38 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		187FEF8A1FA0B74400247E38 /* Patients+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Patients+CoreDataClass.swift"; sourceTree = "<group>"; };
 		187FEF8B1FA0B74400247E38 /* Patients+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Patients+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		18DB87C21FA33E3400D38BC9 /* ClinicExpense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClinicExpense+CoreDataClass.swift"; sourceTree = "<group>"; };
+		18DB87C31FA33E3400D38BC9 /* ClinicExpense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClinicExpense+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		18DB87C61FA3645900D38BC9 /* InventoryExpensePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryExpensePopupViewController.swift; sourceTree = "<group>"; };
+		18DB87C81FA477CF00D38BC9 /* InventoryExpense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InventoryExpense+CoreDataClass.swift"; sourceTree = "<group>"; };
+		18DB87C91FA477CF00D38BC9 /* InventoryExpense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InventoryExpense+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		18DB87CC1FA49E1900D38BC9 /* PatientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsTableViewController.swift; sourceTree = "<group>"; };
+		18DB87D01FA4A69A00D38BC9 /* SinglePatientEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePatientEntryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +123,22 @@
 		187FEF521F9E038500247E38 /* Dental Account Book */ = {
 			isa = PBXGroup;
 			children = (
+				18DB87C81FA477CF00D38BC9 /* InventoryExpense+CoreDataClass.swift */,
+				18DB87C91FA477CF00D38BC9 /* InventoryExpense+CoreDataProperties.swift */,
+				18DB87C21FA33E3400D38BC9 /* ClinicExpense+CoreDataClass.swift */,
+				18DB87C31FA33E3400D38BC9 /* ClinicExpense+CoreDataProperties.swift */,
 				187FEF8A1FA0B74400247E38 /* Patients+CoreDataClass.swift */,
 				187FEF8B1FA0B74400247E38 /* Patients+CoreDataProperties.swift */,
 				187FEF531F9E038500247E38 /* AppDelegate.swift */,
 				187FEF881FA0AA8A00247E38 /* PersistenceService.swift */,
 				187FEF551F9E038500247E38 /* ViewController.swift */,
-				187FEF571F9E038500247E38 /* Main.storyboard */,
+				18DB87D01FA4A69A00D38BC9 /* SinglePatientEntryTableViewCell.swift */,
+				18DB87CC1FA49E1900D38BC9 /* PatientsTableViewController.swift */,
+				1833E8D21FA284250012A920 /* ExpensePopupViewController.swift */,
+				18DB87C61FA3645900D38BC9 /* InventoryExpensePopupViewController.swift */,
 				187FEF861F9F57EE00247E38 /* PatientEntryViewController.swift */,
 				187FEF5D1F9E038500247E38 /* Assets.xcassets */,
+				187FEF571F9E038500247E38 /* Main.storyboard */,
 				187FEF5F1F9E038500247E38 /* LaunchScreen.storyboard */,
 				187FEF621F9E038500247E38 /* Info.plist */,
 				187FEF5A1F9E038500247E38 /* Dental_Account_Book.xcdatamodeld */,
@@ -274,11 +298,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DB87C71FA3645900D38BC9 /* InventoryExpensePopupViewController.swift in Sources */,
+				18DB87CA1FA477CF00D38BC9 /* InventoryExpense+CoreDataClass.swift in Sources */,
 				187FEF891FA0AA8A00247E38 /* PersistenceService.swift in Sources */,
 				187FEF5C1F9E038500247E38 /* Dental_Account_Book.xcdatamodeld in Sources */,
+				18DB87C51FA33E3400D38BC9 /* ClinicExpense+CoreDataProperties.swift in Sources */,
 				187FEF561F9E038500247E38 /* ViewController.swift in Sources */,
 				187FEF8C1FA0B74400247E38 /* Patients+CoreDataClass.swift in Sources */,
+				1833E8D31FA284250012A920 /* ExpensePopupViewController.swift in Sources */,
+				18DB87D11FA4A69A00D38BC9 /* SinglePatientEntryTableViewCell.swift in Sources */,
+				18DB87CB1FA477CF00D38BC9 /* InventoryExpense+CoreDataProperties.swift in Sources */,
 				187FEF871F9F57EE00247E38 /* PatientEntryViewController.swift in Sources */,
+				18DB87C41FA33E3400D38BC9 /* ClinicExpense+CoreDataClass.swift in Sources */,
+				18DB87CD1FA49E1900D38BC9 /* PatientsTableViewController.swift in Sources */,
 				187FEF541F9E038500247E38 /* AppDelegate.swift in Sources */,
 				187FEF8D1FA0B74400247E38 /* Patients+CoreDataProperties.swift in Sources */,
 			);

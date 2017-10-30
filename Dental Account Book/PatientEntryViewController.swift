@@ -9,6 +9,11 @@
 import UIKit
 import CoreData
 
+//Global Variables used in all classes written outside class
+let datePicker = UIDatePicker()
+let dateFormatter = DateFormatter()
+
+
 class PatientEntryViewController: UIViewController {
     @IBOutlet weak var patientNameText: UITextField!
     @IBOutlet weak var opdNumberText: UITextField!
@@ -81,11 +86,8 @@ class PatientEntryViewController: UIViewController {
     
     @objc func donePressed(){
         //to view correct format of date
-        
-        dateFormatter.dateStyle = .long
+        dateFormatter.dateStyle = .short
         dateFormatter.timeStyle = .none
-        
-        
         
         datePickerText.text = dateFormatter.string(from: datePicker.date)
         self.view.endEditing(true)
@@ -100,15 +102,23 @@ class PatientEntryViewController: UIViewController {
 
     @IBAction func addPatientName(_ sender: UIButton) {
         let patient = Patients(context: PersistenceService.context)
-      
-      
-        datePickerText.text = String(describing: patient.datePicker)
-        patientNameText.text = patient.patientName
-        opdNumberText.text = String(patient.opdNumber)
-        totalInvoiceText.text = String(patient.totalInvoice)
-        amountPaidText.text = String(patient.amountPaid)
-        datePaidText.text = String(describing: patient.datePaid)
-        balanceDueText.text = String(patient.balanceDue)
+    
+        patient.datePicker = datePickerText.text
+        patient.patientName = patientNameText.text
+        patient.opdNumber = Int64(opdNumberText.text!)!
+        patient.amountPaid = Int64(amountPaidText.text!)!
+        patient.datePaid = datePaidText.text
+        patient.balanceDue = Int64(balanceDueText.text!)!
+        
+//        datePickerText.text = String(describing: patient.datePicker)
+//        patientNameText.text = patient.patientName
+//        opdNumberText.text = String(patient.opdNumber)
+//        totalInvoiceText.text = String(patient.totalInvoice)
+//        patient.amountPaid = Int64(amountPaidText.text!)!
+//        datePaidText.text = String(describing: patient.datePaid)
+//        balanceDueText.text = String(patient.balanceDue)
+//
+        
         PersistenceService.saveContext()
         patientArr.append(patient)
        

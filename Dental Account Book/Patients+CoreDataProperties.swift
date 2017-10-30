@@ -20,9 +20,9 @@ extension Patients {
     @NSManaged public var patientName: String?
     @NSManaged public var opdNumber: Int64
     @NSManaged public var totalInvoice: Int64
-    @NSManaged public var datePicker: NSDate?
+    @NSManaged public var datePicker: String?
     @NSManaged public var amountPaid: Int64
-    @NSManaged public var datePaid: NSDate?
+    @NSManaged public var datePaid: String?
     @NSManaged public var balanceDue: Int64
 
 }

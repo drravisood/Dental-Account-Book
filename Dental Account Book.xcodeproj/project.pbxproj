@@ -20,13 +20,13 @@
 		187FEF891FA0AA8A00247E38 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF881FA0AA8A00247E38 /* PersistenceService.swift */; };
 		187FEF8C1FA0B74400247E38 /* Patients+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF8A1FA0B74400247E38 /* Patients+CoreDataClass.swift */; };
 		187FEF8D1FA0B74400247E38 /* Patients+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FEF8B1FA0B74400247E38 /* Patients+CoreDataProperties.swift */; };
+		189B9ECD1FA86870006CE6F6 /* SinglePatientEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B9ECC1FA86870006CE6F6 /* SinglePatientEntryTableViewCell.swift */; };
 		18DB87C41FA33E3400D38BC9 /* ClinicExpense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87C21FA33E3400D38BC9 /* ClinicExpense+CoreDataClass.swift */; };
 		18DB87C51FA33E3400D38BC9 /* ClinicExpense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87C31FA33E3400D38BC9 /* ClinicExpense+CoreDataProperties.swift */; };
 		18DB87C71FA3645900D38BC9 /* InventoryExpensePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87C61FA3645900D38BC9 /* InventoryExpensePopupViewController.swift */; };
 		18DB87CA1FA477CF00D38BC9 /* InventoryExpense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87C81FA477CF00D38BC9 /* InventoryExpense+CoreDataClass.swift */; };
 		18DB87CB1FA477CF00D38BC9 /* InventoryExpense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87C91FA477CF00D38BC9 /* InventoryExpense+CoreDataProperties.swift */; };
 		18DB87CD1FA49E1900D38BC9 /* PatientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87CC1FA49E1900D38BC9 /* PatientsTableViewController.swift */; };
-		18DB87D11FA4A69A00D38BC9 /* SinglePatientEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB87D01FA4A69A00D38BC9 /* SinglePatientEntryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,13 +66,13 @@
 		187FEF881FA0AA8A00247E38 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		187FEF8A1FA0B74400247E38 /* Patients+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Patients+CoreDataClass.swift"; sourceTree = "<group>"; };
 		187FEF8B1FA0B74400247E38 /* Patients+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Patients+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		189B9ECC1FA86870006CE6F6 /* SinglePatientEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePatientEntryTableViewCell.swift; sourceTree = "<group>"; };
 		18DB87C21FA33E3400D38BC9 /* ClinicExpense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClinicExpense+CoreDataClass.swift"; sourceTree = "<group>"; };
 		18DB87C31FA33E3400D38BC9 /* ClinicExpense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClinicExpense+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		18DB87C61FA3645900D38BC9 /* InventoryExpensePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryExpensePopupViewController.swift; sourceTree = "<group>"; };
 		18DB87C81FA477CF00D38BC9 /* InventoryExpense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InventoryExpense+CoreDataClass.swift"; sourceTree = "<group>"; };
 		18DB87C91FA477CF00D38BC9 /* InventoryExpense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InventoryExpense+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		18DB87CC1FA49E1900D38BC9 /* PatientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsTableViewController.swift; sourceTree = "<group>"; };
-		18DB87D01FA4A69A00D38BC9 /* SinglePatientEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePatientEntryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,7 @@
 				187FEF531F9E038500247E38 /* AppDelegate.swift */,
 				187FEF881FA0AA8A00247E38 /* PersistenceService.swift */,
 				187FEF551F9E038500247E38 /* ViewController.swift */,
-				18DB87D01FA4A69A00D38BC9 /* SinglePatientEntryTableViewCell.swift */,
+				189B9ECC1FA86870006CE6F6 /* SinglePatientEntryTableViewCell.swift */,
 				18DB87CC1FA49E1900D38BC9 /* PatientsTableViewController.swift */,
 				1833E8D21FA284250012A920 /* ExpensePopupViewController.swift */,
 				18DB87C61FA3645900D38BC9 /* InventoryExpensePopupViewController.swift */,
@@ -306,7 +306,7 @@
 				187FEF561F9E038500247E38 /* ViewController.swift in Sources */,
 				187FEF8C1FA0B74400247E38 /* Patients+CoreDataClass.swift in Sources */,
 				1833E8D31FA284250012A920 /* ExpensePopupViewController.swift in Sources */,
-				18DB87D11FA4A69A00D38BC9 /* SinglePatientEntryTableViewCell.swift in Sources */,
+				189B9ECD1FA86870006CE6F6 /* SinglePatientEntryTableViewCell.swift in Sources */,
 				18DB87CB1FA477CF00D38BC9 /* InventoryExpense+CoreDataProperties.swift in Sources */,
 				187FEF871F9F57EE00247E38 /* PatientEntryViewController.swift in Sources */,
 				18DB87C41FA33E3400D38BC9 /* ClinicExpense+CoreDataClass.swift in Sources */,

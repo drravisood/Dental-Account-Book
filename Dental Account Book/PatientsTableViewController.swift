@@ -29,7 +29,7 @@ class PatientsTableViewController: UITableViewController {
             self.patientEntryViewController = patientArr
            
             //self.tableView.reloadData()
-            print("\(patientArr.count)")
+            print("\(patientArr)")
         }
         catch {
             print("error in ftech request do catch statement")
@@ -88,6 +88,21 @@ class PatientsTableViewController: UITableViewController {
         
     }
     
+    
+//    func tableView(_ tableView: UITableView, willDisplay cell: SinglePatientEntryTableViewCell, forRowAt indexPath: IndexPath) {
+//        // Fetches the appropriate patient entry for the data source layout.
+//        let patient = patientEntryViewController[indexPath.row]
+//        
+//        // Configure the cell...
+//        
+//        cell.dateLabel.text = patient.datePicker
+//        cell.patientnameLabel.text = patient.patientName
+//        cell.opdNumberLabel.text = String(patient.opdNumber)
+//        cell.amountPaidLabel.text = String(patient.amountPaid)
+//        cell.dateLabel.text = patient.datePaid
+//        cell.balanceLabel.text = String(patient.balanceDue)
+//    }
+//    
 
     /*
     // Override to support conditional editing of the table view.

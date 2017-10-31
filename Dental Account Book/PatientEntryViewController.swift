@@ -110,15 +110,7 @@ class PatientEntryViewController: UIViewController {
         patient.datePaid = datePaidText.text
         patient.balanceDue = Int64(balanceDueText.text!)!
         
-//        datePickerText.text = String(describing: patient.datePicker)
-//        patientNameText.text = patient.patientName
-//        opdNumberText.text = String(patient.opdNumber)
-//        totalInvoiceText.text = String(patient.totalInvoice)
-//        patient.amountPaid = Int64(amountPaidText.text!)!
-//        datePaidText.text = String(describing: patient.datePaid)
-//        balanceDueText.text = String(patient.balanceDue)
-//
-        
+
         PersistenceService.saveContext()
         patientArr.append(patient)
        
@@ -127,13 +119,7 @@ class PatientEntryViewController: UIViewController {
         
         
         
-//        print("\(String(describing: patientNameText.text))")
-//        print(datePickerText.text!)
-//        print(opdNumberText.text!)
-//        print(totalInvoiceText.text!)
-//        print(amountPaidText.text!)
-//        print(datePaidText.text!)
-//        print(balanceDueText.text!)
+
     }
     
     

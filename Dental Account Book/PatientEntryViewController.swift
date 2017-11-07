@@ -25,12 +25,18 @@ class PatientEntryViewController: UIViewController {
     
     let datePicker = UIDatePicker()
     let dateFormatter = DateFormatter()
-    var patientArr = [Patients]()
+    
+    //var patientArr = [Patients]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //storing core data
+     
+        
+       
+        
         
         createDatePicker()
         
@@ -101,18 +107,47 @@ class PatientEntryViewController: UIViewController {
   
 
     @IBAction func addPatientName(_ sender: UIButton) {
-        let patient = Patients(context: PersistenceService.context)
-    
-        patient.datePicker = datePickerText.text
-        patient.patientName = patientNameText.text
-        patient.opdNumber = Int64(opdNumberText.text!)!
-        patient.amountPaid = Int64(amountPaidText.text!)!
-        patient.datePaid = datePaidText.text
-        patient.balanceDue = Int64(balanceDueText.text!)!
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .none
         
+        let dateSelected = dateFormatter.date(from: "datePickerText.text")
+        let opdNumberSelected = Int64(opdNumberText.text!)!
+        let amountPaidSelected = Int64(amountPaidText.text!)!
+        let datePaidSelected = dateFormatter.date(from: "datePaidText.text")
+        let balanceSelected = Int64(balanceDueText.text!)!
 
-        PersistenceService.saveContext()
-        patientArr.append(patient)
+        
+        
+        let newPatient = NSEntityDescription.insertNewObject(forEntityName: "Patients", into: context) as! Patients
+        newPatient.setValue(dateSelected, forKey: "datePicker")
+        newPatient.setValue(patientNameText.text, forKey: "patientName")
+        newPatient.setValue(opdNumberSelected, forKey: "opdNumber")
+        newPatient.setValue(amountPaidSelected, forKey: "amountPaid")
+        newPatient.setValue(datePaidSelected, forKey: "datePaid")
+        newPatient.setValue(balanceSelected, forKey: "balanceDue")
+        
+        do {
+            try context.save()
+            
+        } catch
+        
+        {
+            fatalError("Failure to save context: \(error)")
+        }
+//        let patient = Patients(context: PersistenceService.context)
+//        
+//        patient.datePicker = dateFormatter.date(from: datePickerText.text!)! as NSDate
+//        patient.patientName = patientNameText.text
+//        patient.opdNumber = Int64(opdNumberText.text!)!
+//        patient.amountPaid = Int64(amountPaidText.text!)!
+//        patient.datePaid = dateFormatter.date(from: datePaidText.text!)! as NSDate
+//        patient.balanceDue = Int64(balanceDueText.text!)!
+//        
+//
+//        PersistenceService.saveContext()
+//        patientArr.append(patient)
        
         
         

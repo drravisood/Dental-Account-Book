@@ -2,7 +2,7 @@
 //  InventoryExpense+CoreDataProperties.swift
 //  Dental Account Book
 //
-//  Created by Apple on 10/28/17.
+//  Created by Apple on 11/2/17.
 //  Copyright © 2017 Apple. All rights reserved.
 //
 //
@@ -17,10 +17,10 @@ extension InventoryExpense {
         return NSFetchRequest<InventoryExpense>(entityName: "InventoryExpense")
     }
 
+    @NSManaged public var costPerUnit: Int64
     @NSManaged public var date: NSDate?
     @NSManaged public var materialName: String?
     @NSManaged public var numberOfUnits: Int64
-    @NSManaged public var costPerUnit: Int64
     @NSManaged public var totalCost: Int64
 
 }

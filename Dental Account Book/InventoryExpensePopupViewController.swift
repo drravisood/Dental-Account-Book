@@ -20,7 +20,7 @@ class InventoryExpensePopupViewController: UIViewController {
     @IBOutlet weak var cancelInventoryExpensePopupWithoutSave: UIButton!
     
     var createDatePicker = PatientEntryViewController()
-    var inventoryExpenseArr = [InventoryExpense]()
+   // var inventoryExpenseArr = [InventoryExpense]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,16 +108,16 @@ class InventoryExpensePopupViewController: UIViewController {
     }
     */
     @IBAction func addInventoryExpensePopupAndClose(_ sender: UIButton) {
-        let inventoryExpense = InventoryExpense(context: PersistenceService.context)
-    
-        datePickerText.text = String(describing: inventoryExpense.date)
-        materialNameText.text = inventoryExpense.materialName
-        numberOfUnitsText.text = String(inventoryExpense.numberOfUnits)
-        costPerUnitText.text = String(inventoryExpense.costPerUnit)
-        PersistenceService.saveContext()
-        inventoryExpenseArr.append(inventoryExpense)
-       self.removeAnimate()
-        
+//        let inventoryExpense = InventoryExpense(context: PersistenceService.context)
+//
+//        datePickerText.text = String(describing: inventoryExpense.date)
+//        materialNameText.text = inventoryExpense.materialName
+//        numberOfUnitsText.text = String(inventoryExpense.numberOfUnits)
+//        costPerUnitText.text = String(inventoryExpense.costPerUnit)
+//        PersistenceService.saveContext()
+//        inventoryExpenseArr.append(inventoryExpense)
+//       self.removeAnimate()
+//        
     }
     
     @IBAction func cancelInventoryExpensePopupWithoutSave(_ sender: UIButton) {

@@ -15,8 +15,8 @@
     <entity name="Patients" representedClassName="Patients" syncable="YES">
         <attribute name="amountPaid" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="balanceDue" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="datePaid" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="datePicker" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="datePaid" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="datePicker" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="opdNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="patientName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="totalInvoice" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>

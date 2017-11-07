@@ -9,32 +9,61 @@
 import UIKit
 import CoreData
 
-class PatientsTableViewController: UITableViewController {
-
+class PatientsTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
-   // var patientFetchArr: [Patients] = [Patients]()
-    var patientEntryViewController = PatientEntryViewController().patientArr
+    //let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+
+    var patientFetchArr = [Patients]()
+    
+    lazy var fetchedResultsControler: NSFetchedResultsController = { () -> NSFetchedResultsController<NSFetchRequestResult> in
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Patients")
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "patientName", ascending: true)]
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        controller.delegate = self
+        return controller
+    }()
+    
+  
+    
+    
+    //var patientEntryViewController = PatientEntryViewController().patientArr
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchedResultsControler.delegate = self
         
-        
-        
-        //fetch req for core data
-        let fetchRequest: NSFetchRequest<Patients> = Patients.fetchRequest()
         
         do {
-            let patientArr = try PersistenceService.context.fetch(fetchRequest)
+            try fetchedResultsControler.performFetch()
+    
+            self.tableView.reloadData()
             
-            self.patientEntryViewController = patientArr
-           
-            //self.tableView.reloadData()
-            print("\(patientArr)")
         }
-        catch {
-            print("error in ftech request do catch statement")
+         catch {
+            fatalError("Failed to fetch entities: \(error)")
         }
+    
         
+        //fetch req for core data
+        
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        let context = appDelegate.persistentContainer.viewContext
+//
+//        let patientFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Patients")
+//        patientFetchRequest.returnsObjectsAsFaults = false
+//        do {
+//            if let patientArr = try context.fetch(patientFetchRequest) as? [Patients] {
+//                self.patientFetchArr = patientArr
+//                self.tableView.reloadData()}
+//
+//
+//        }
+//        catch {
+//            fatalError("Failed to fetch employees: \(error)")
+//        }
+//
+
         
         
         // Uncomment the following line to preserve selection between presentations
@@ -43,16 +72,24 @@ class PatientsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    
+    
+    
+    
+    
+    
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
+
+        
         return 1
     }
 
@@ -60,7 +97,9 @@ class PatientsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return patientEntryViewController.count
+        
+        return (fetchedResultsControler.sections?[0].numberOfObjects)!
+        
     }
 
     // Table view cells are reused and should be dequeued using a cell identifier.
@@ -72,37 +111,24 @@ class PatientsTableViewController: UITableViewController {
             
         }
         // Fetches the appropriate patient entry for the data source layout.
-        let patient = patientEntryViewController[indexPath.row]
-        
+       let patient = fetchedResultsControler.object(at: indexPath) as! Patients
+
         // Configure the cell...
         
-        cell.dateLabel.text = patient.datePicker
+        
+        
+        cell.dateLabel.text = String(describing: patient.datePicker)
         cell.patientnameLabel.text = patient.patientName
         cell.opdNumberLabel.text = String(patient.opdNumber)
         cell.amountPaidLabel.text = String(patient.amountPaid)
-        cell.dateLabel.text = patient.datePaid
+        cell.dateLabel.text = String(describing: patient.datePaid)
         cell.balanceLabel.text = String(patient.balanceDue)
-        
+
        
         return cell
-        
     }
     
     
-//    func tableView(_ tableView: UITableView, willDisplay cell: SinglePatientEntryTableViewCell, forRowAt indexPath: IndexPath) {
-//        // Fetches the appropriate patient entry for the data source layout.
-//        let patient = patientEntryViewController[indexPath.row]
-//        
-//        // Configure the cell...
-//        
-//        cell.dateLabel.text = patient.datePicker
-//        cell.patientnameLabel.text = patient.patientName
-//        cell.opdNumberLabel.text = String(patient.opdNumber)
-//        cell.amountPaidLabel.text = String(patient.amountPaid)
-//        cell.dateLabel.text = patient.datePaid
-//        cell.balanceLabel.text = String(patient.balanceDue)
-//    }
-//    
 
     /*
     // Override to support conditional editing of the table view.

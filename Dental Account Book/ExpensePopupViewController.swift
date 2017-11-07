@@ -18,7 +18,7 @@ class ExpensePopupViewController: UIViewController {
     @IBOutlet weak var cancelExpensePopupWithoutSave: UIButton!
     @IBOutlet weak var datePickerText: UITextField!
     
-    var clinicExpenseArr = [ClinicExpense]()
+    //var clinicExpenseArr = [ClinicExpense]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,13 +96,13 @@ class ExpensePopupViewController: UIViewController {
     }
     @IBAction func closeExpensePopup(_ sender: UIButton) {
         
-        let clinicExpense = ClinicExpense(context: PersistenceService.context)
-        expenseNameText.text = clinicExpense.expenseName
-        expenseAmountText.text = String(clinicExpense.amount)
-        
-        clinicExpenseArr.append(clinicExpense)
-        PersistenceService.saveContext()
-        
+//        let clinicExpense = ClinicExpense(context: PersistenceService.context)
+//        expenseNameText.text = clinicExpense.expenseName
+//        expenseAmountText.text = String(clinicExpense.amount)
+//        
+//        clinicExpenseArr.append(clinicExpense)
+//        PersistenceService.saveContext()
+//        
         
         
         self.removeAnimate()
